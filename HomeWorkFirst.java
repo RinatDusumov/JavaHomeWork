@@ -23,17 +23,8 @@ public class HomeWorkFirst {
         System.out.println(z * k);
         System.out.println(z / k);
 
-        int [] number = new int[5];
-        number[0] = 35;
-        number[1] = 6;
-        number[2] = 4;
-        number[3] = 87;
-        number[4] = 42;
-        System.out.println(number[0]);
-        System.out.println(number[1]);
-        System.out.println(number[2]);
-        System.out.println(number[3]);
-        System.out.println(number[4]);
+        int [] num = {35, 6, 4, 87, 42};
+        System.out.println(num[0] +" "+ num[1] +" "+ num[2] +" "+ num[3] +" "+ num[4]);
 
         int l = 25;
         double caloricity = (Math.PI * Math.pow(l/2, 2)) * 40;
