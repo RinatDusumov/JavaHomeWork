@@ -10,9 +10,9 @@ class HomeWorkFirst {
     public static void main(String[] args) {
         int x, y, p, s;
         x = 8; y = 12;
-        P = 2 * (x + y);
-        S = x * y;
-        System.out.printf("Perimeter = %d, area = %d\n", P, S);
+        p = 2 * (x + y);
+        s = x * y;
+        System.out.printf("Perimeter = %d, area = %d\n", p, s);
 
         int z, k;
         z = 5; k = 3;
@@ -23,7 +23,7 @@ class HomeWorkFirst {
         System.out.println(num[0] +" "+ num[1] +" "+ num[2] +" "+ num[3] +" "+ num[4]);
 
         int d = 25;
-        int r = d / 2;
+        double r = d / 2;
         double caloricity = (Math.PI * Math.pow(r, 2)) * 40;
         System.out.printf("The calorie content of pizza is equal to %.2f\n", caloricity);
     }
