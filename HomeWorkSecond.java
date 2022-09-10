@@ -37,6 +37,9 @@ class HomeWorkSecond {
         
         //task 5
         canBuyFood();
+        
+        //task 6
+        quadraticEquation();
     }
     
         //task 1
@@ -118,6 +121,30 @@ class HomeWorkSecond {
         } else {
             System.out.println("I can’t buy food");
         }
+        return 0;
+    }
+    
+        //task 6
+     static double quadraticEquation() {
+        System.out.println("enter the number 'a'");
+        double a = SCANNER.nextDouble();
+        System.out.println("enter the number 'b'");
+        double b = SCANNER.nextDouble();
+        System.out.println("enter the number 'c'");
+        double c = SCANNER.nextDouble();
+
+        double d = Math.pow(b, 2) - 4 * a * c;
+            if (d >= 0) {
+                System.out.println("Discriminant is = " + d);
+                double x1 = (-b + Math.sqrt(d)) / 2 * a;
+                double x2 = (-b - Math.sqrt(d)) / 2 * a;
+                if((x1 + x2 == -b) && (x1 * x2 == c)) {
+                    System.out.println("Number " + x1 + " and "
+                        + x2 + " are the roots of the equation");
+                }
+            } else {
+                System.out.println("no roots");
+            }
         return 0;
     }
 }
