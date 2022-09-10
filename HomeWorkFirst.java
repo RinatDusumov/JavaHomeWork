@@ -23,7 +23,7 @@ class HomeWorkFirst {
         System.out.println(num[0] +" "+ num[1] +" "+ num[2] +" "+ num[3] +" "+ num[4]);
 
         int d = 25;
-        double r = d / 2;
+        double r = d / 2d;
         double caloricity = (Math.PI * Math.pow(r, 2)) * 40;
         System.out.printf("The calorie content of pizza is equal to %.2f\n", caloricity);
     }
