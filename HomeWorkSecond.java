@@ -34,10 +34,18 @@ class HomeWorkSecond {
         System.out.println(dayOfWeek(number));
         
         //task 5
-        canBuyFood();
+        boolean isLidlOpen = false;
+        boolean isTescoOpen = true;
+        System.out.println(canBuyFood(isLidlOpen, isTescoOpen));
         
         //task 6
-        quadraticEquation();
+        System.out.println("enter the number 'a'");
+        double a = SCANNER.nextDouble();
+        System.out.println("enter the number 'b'");
+        double b = SCANNER.nextDouble();
+        System.out.println("enter the number 'c'");
+        double c = SCANNER.nextDouble();
+        quadraticEquation(a, b, c);
     }
     
         //task 1
@@ -46,14 +54,14 @@ class HomeWorkSecond {
         int temperature = SCANNER.nextInt();
         if(temperature <= 0) {
             return "It's frost";
-        } else if (temperature > 0 && temperature <= 18) {
+        } else if (temperature <= 18) {
             return "It's cold";
-        } else if (temperature >= 19 && temperature <= 28) {
+        } else if (temperature <= 28) {
             return "It's warm";
-        } else if (temperature >= 29){
-            return "It's hot";
         } else {
-            return "Error";
+            if (temperature >= 29){
+                return "It's hot";
+            }
         }
     }
     
@@ -82,26 +90,26 @@ class HomeWorkSecond {
         return jey;
     }
     static double getDivision(int x, int y) {
-        double si = x / y * 0.1;
+        double si = x / y * 1.0;
         return si;
     }
     
         //task 4
     static String dayOfWeek(int number) {
         switch (number) {
-            case (1):
+            case 1:
                 return "Monday";
-            case (2):
+            case 2:
                 return "Tuesday";
-            case (3):
+            case 3:
                 return "Wednesday";
-            case (4):
+            case 4:
                 return "Thursday";
-            case (5):
+            case 5:
                 return "Friday";
-            case (6):
+            case 6:
                 return "Saturday";
-            case (7):
+            case 7:
                 return "Sunday";
             default:
                 return "Error";
@@ -109,38 +117,28 @@ class HomeWorkSecond {
     }
     
         //task 5
-    static int canBuyFood() {
-        boolean isLidlOpen = false;
-        boolean isTescoOpen = true;
+    static boolean canBuyFood(boolean isLidlOpen, boolean isTescoOpen) {
         boolean b = (isLidlOpen || isTescoOpen);
-        System.out.println(b);
-        if(isLidlOpen == true) {
-            System.out.println("I can buy food in is Lidl open");
-        } else if(isTescoOpen == true) {
-            System.out.println("I can buy food in is Tesco open");
-        } else {
-            System.out.println("I can’t buy food");
+            if(isLidlOpen == true) {
+                System.out.println("I can buy food in is Lidl open");
+            } else if(isTescoOpen == true) {
+                System.out.println("I can buy food in is Tesco open");
+            } else {
+                System.out.println("I can’t buy food");
+            }
+            return b;
         }
-        return 0;
-    }
     
         //task 6
-     static double quadraticEquation() {
-        System.out.println("enter the number 'a'");
-        double a = SCANNER.nextDouble();
-        System.out.println("enter the number 'b'");
-        double b = SCANNER.nextDouble();
-        System.out.println("enter the number 'c'");
-        double c = SCANNER.nextDouble();
-
+    static double quadraticEquation(double a, double b, double c) {
         double d = Math.pow(b, 2) - 4 * a * c;
             if (d >= 0) {
                 System.out.println("Discriminant is = " + d);
                 double x1 = (-b + Math.sqrt(d)) / 2 * a;
                 double x2 = (-b - Math.sqrt(d)) / 2 * a;
-                if((x1 + x2 == -b) && (x1 * x2 == c)) {
-                    System.out.println("Number " + x1 + " and "
-                        + x2 + " are the roots of the equation");
+                    if((x1 + x2 == -b) && (x1 * x2 == c)) {
+                        System.out.println("Number " + x1 + " and "
+                            + x2 + " are the roots of the equation");
                 }
             } else {
                 System.out.println("no roots");
