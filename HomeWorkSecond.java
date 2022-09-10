@@ -16,7 +16,9 @@ class HomeWorkSecond {
         System.out.println(checkWeather());
         
         // task 2
-        System.out.println(canWalk());
+        Boolean isWeekend = true;
+        Boolean isRain = true;
+        System.out.println(canWalk(isWeekend, isRain));
         
         // task 3
         System.out.println("Enter an integer");
@@ -66,14 +68,9 @@ class HomeWorkSecond {
     }
     
         //task 2
-    static Boolean canWalk() {
-        Boolean isWeekend = true;
-        Boolean isRain = true;
-        if (isWeekend ^ !isRain) {
-            return true;
-        } else {
-            return false;
-        }
+    static Boolean canWalk(Boolean isWeekend, Boolean isRain) {
+        boolean b = isWeekend ^ !isRain;
+            return b;
     }
     
         //task 3
