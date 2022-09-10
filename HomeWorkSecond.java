@@ -13,7 +13,9 @@ class HomeWorkSecond {
 
     public static void main(String[] args) {
         // task 1
-        System.out.println(checkWeather());
+        System.out.println("Enter the air temperature");
+        int temperature = SCANNER.nextInt();
+        System.out.println(checkWeather(temperature));
         
         // task 2
         Boolean isWeekend = true;
@@ -51,9 +53,7 @@ class HomeWorkSecond {
     }
     
         //task 1
-    static String checkWeather() {
-        System.out.println("Enter the air temperature");
-        int temperature = SCANNER.nextInt();
+    static String checkWeather(int temperature) {
         if(temperature <= 0) {
             return "It's frost";
         } else if (temperature <= 18) {
