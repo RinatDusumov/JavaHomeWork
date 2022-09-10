@@ -16,9 +16,7 @@ class HomeWorkSecond {
         System.out.println(checkWeather());
         
         // task 2
-        Boolean isWeekend = true;
-        Boolean isRain = true;
-        System.out.println(canWalk(isWeekend, isRain));
+        System.out.println(canWalk());
         
         // task 3
         System.out.println("Enter an integer");
@@ -52,7 +50,7 @@ class HomeWorkSecond {
             return "It's cold";
         } else if (temperature >= 19 && temperature <= 28) {
             return "It's warm";
-        } else if (temperature > 29){
+        } else if (temperature >= 29){
             return "It's hot";
         } else {
             return "Error";
@@ -60,7 +58,9 @@ class HomeWorkSecond {
     }
     
         //task 2
-    static Boolean canWalk(boolean isWeekend, boolean isRain) {
+    static Boolean canWalk() {
+        Boolean isWeekend = true;
+        Boolean isRain = true;
         if (isWeekend ^ !isRain) {
             return true;
         } else {
@@ -69,20 +69,20 @@ class HomeWorkSecond {
     }
     
         //task 3
-    static double getAddition(int x, int y) {
-        double zet = x + y;
+    static int getAddition(int x, int y) {
+        int zet = x + y;
         return zet;
     }
-    static double getSubtraction(double x, double y) {
-        double key = x - y;
+    static int getSubtraction(int x, int y) {
+        int key = x - y;
         return key;
     }
-    static double getMultiplication(double x, double y) {
-        double jey = x * y;
+    static int getMultiplication(int x, int y) {
+        int jey = x * y;
         return jey;
     }
-    static double getDivision(double x, double y) {
-        double si = x / y;
+    static double getDivision(int x, int y) {
+        double si = x / y * 0.1;
         return si;
     }
     
