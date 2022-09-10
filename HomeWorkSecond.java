@@ -87,7 +87,7 @@ class HomeWorkSecond {
         return jey;
     }
     static double getDivision(int x, int y) {
-        double si = x / y * 1.0;
+        double si = x * 1.0/ y;
         return si;
     }
     
