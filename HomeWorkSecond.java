@@ -23,18 +23,15 @@ class HomeWorkSecond {
         System.out.println(canWalk(isWeekend, isRain));
         
         // task 3
-        System.out.println("Enter an integer");
-        System.out.println("Enter an integer");
-        int x = SCANNER.nextInt();
-        int y = SCANNER.nextInt();
+        int x = 6;
+        int y = 3;
         System.out.println(getAddition(x, y));
         System.out.println(getSubtraction(x, y));
         System.out.println(getMultiplication(x, y));
         System.out.println(getDivision(x, y));
         
         //task 4
-        System.out.println("Enter the number of the day of the week");
-        int number = SCANNER.nextInt();
+        int number = 5;
         System.out.println(dayOfWeek(number));
         
         //task 5
@@ -61,9 +58,7 @@ class HomeWorkSecond {
         } else if (temperature <= 28) {
             return "It's warm";
         } else {
-            if (temperature >= 29){
-                return "It's hot";
-            }
+            return "It's hot";
         }
     }
     
@@ -87,7 +82,7 @@ class HomeWorkSecond {
         return jey;
     }
     static double getDivision(int x, int y) {
-        double si = x * 1.0/ y;
+        double si = x * 1.0/ (y * 1.0);
         return si;
     }
     
