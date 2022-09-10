@@ -2,7 +2,8 @@
  * Java Basic. Home work #1
  *
  * @author Rinat Dusumov
- * @version 9.9.2022
+ * @todo 05.09.2022
+ * @date 09.09.2022
  */
 
 class HomeWorkFirst {
@@ -15,7 +16,7 @@ class HomeWorkFirst {
 
         int z, k;
         z = 5; k = 3;
-        double h = z / k * 0.1;
+        double h = z / k * 1.0;
         System.out.printf((z + k) +" "+ (z - k) +" "+ (z * k) +" "+ "%.2f\n", h);
 
         int[] num = {35, 6, 4, 87, 42};
