@@ -64,8 +64,11 @@ class HomeWorkSecond {
     
         //task 2
     static Boolean canWalk(Boolean isWeekend, Boolean isRain) {
-        boolean b = isWeekend ^ !isRain;
-            return b;
+        if(isWeekend ^ !isRain) {
+            return true;
+        } else {
+            return false;
+        }
     }
     
         //task 3
