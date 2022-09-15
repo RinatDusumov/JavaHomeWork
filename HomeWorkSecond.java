@@ -19,7 +19,7 @@ class HomeWorkSecond {
         
         // task 2
         Boolean isWeekend = true;
-        Boolean isRain = true;
+        Boolean isRain = false;
         System.out.println(canWalk(isWeekend, isRain));
         
         // task 3
@@ -64,7 +64,7 @@ class HomeWorkSecond {
     
         //task 2
     static Boolean canWalk(Boolean isWeekend, Boolean isRain) {
-        if(isWeekend ^ !isRain) {
+        if(isWeekend && !isRain) {
             return true;
         } else {
             return false;
@@ -113,15 +113,14 @@ class HomeWorkSecond {
     
         //task 5
     static boolean canBuyFood(boolean isLidlOpen, boolean isTescoOpen) {
-        boolean b = (isLidlOpen || isTescoOpen);
-            if(isLidlOpen == true) {
-                System.out.println("I can buy food in is Lidl open");
-            } else if(isTescoOpen == true) {
-                System.out.println("I can buy food in is Tesco open");
-            } else {
-                System.out.println("I can’t buy food");
-            }
-            return b;
+        if(isLidlOpen == true) {
+            System.out.println("I can buy food in is Lidl open");
+        } else if(isTescoOpen == true) {
+            System.out.println("I can buy food in is Tesco open");
+        } else {
+            System.out.println("I can’t buy food");
+        }
+        return isLidlOpen || isTescoOpen;
         }
     
         //task 6
