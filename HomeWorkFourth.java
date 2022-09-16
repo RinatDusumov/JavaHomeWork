@@ -16,7 +16,7 @@ public class HomeWork1 {
         int number = 0;
         int guess = -1;
         number = random.nextInt(10);
-        while (count < 3 && guess != number){
+        while (count < 3 && guess != number) {
             System.out.println("Guess the number [0-9]: ");
             guess = scanner.nextInt();
             if (guess < number) {
