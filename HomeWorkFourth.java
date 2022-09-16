@@ -34,6 +34,6 @@ public class HomeWorkFourth {
             }
         }
         System.out.print("Repeat game? Yes - Enter yes, No - Enter no: ");
-        scanner.nextLine().equalsIgnoreCase("Yes");
+        String str = String.valueOf(scanner.nextLine().equalsIgnoreCase("Yes"));
     }
 }
