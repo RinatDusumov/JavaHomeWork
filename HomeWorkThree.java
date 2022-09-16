@@ -6,7 +6,7 @@
  * @date 16.09.2022
  */
 
-class HomeWork1 {
+class HomeWorkThree {
     public static void main(String[] args) {
         //task 1
         int[] arrayNumbers = {56, 43, 89, 3, 43, 7};
