@@ -1,4 +1,4 @@
-/**
+ /**
  * Java Basic. Home work #3
  *
  * @author Rinat Dusumov
