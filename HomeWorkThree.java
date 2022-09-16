@@ -42,14 +42,15 @@ class HomeWorkThree {
     }
             //task 3
     static int[] invertArray(int[] numbers) {
+        int[] array = new int[numbers.length];
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == 1) {
-                numbers[i] = 0;
+                array[i] = 0;
             } else {
-                numbers[i] = 1;
+                array[i] = 1;
             }
-            System.out.print(numbers[i]);
+            System.out.print(array[i]);
         }
-        return numbers;
+        return array;
     }
 }
