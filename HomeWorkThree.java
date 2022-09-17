@@ -17,14 +17,9 @@ class HomeWorkThree {
         //task 3
         int[] numbers = {0, 1, 1, 0, 1, 0, 0};
         int[] array = invertArray(numbers);
-        System.out.print("[");
         for (int i = 0; i < invertArray(array).length; i++) {
             System.out.print(array[i]);
-            if (i < invertArray(array).length - 1) {
-                System.out.print(", ");
-            }
         }
-        System.out.print("]");
     }
 
     //task 1
