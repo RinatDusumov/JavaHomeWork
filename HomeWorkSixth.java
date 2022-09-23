@@ -86,14 +86,11 @@ class HomeWorkSixth {
     static boolean isWin(char ch) {
         for (int i = 0; i < 3; i++) {
             if ((table[i][0] == ch && table[i][1] == ch && table[i][2] == ch) ||
-                    (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch))
-                return true;
-
-            if ((table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) ||
-                    (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch))
-                return true;
+                    (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch)) return true;
         }
-            return false;
+        if ((table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) ||
+                    (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch)) return true;
+        return false;
     }
     static boolean isTableFull () {
         for (int i = 0; i < 3; i++) {
