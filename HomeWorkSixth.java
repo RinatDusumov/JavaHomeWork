@@ -89,7 +89,7 @@ class HomeWorkSixth {
                     (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch)) return true;
         }
         if ((table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) ||
-                    (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch)) return true;
+                (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch)) return true;
         return false;
     }
     static boolean isTableFull () {
