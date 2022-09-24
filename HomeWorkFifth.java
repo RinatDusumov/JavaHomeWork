@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @date 21.09.2022
  */
 public class HomeWorkFifth {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         String[] words = {"door", "week", "food"};
