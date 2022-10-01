@@ -11,10 +11,14 @@ public class Car {
         this.ignition = ignition;
         this.clutch = clutch;
     }
-    public void clampingTheClutch() {
+    public void machineControl() {
         if (ignitionOn()) {
             clutch = true;
             System.out.println("Сцепление зажато");
+            System.out.println("Педаль газа зажата: " + giveGas());
+            clutchRelease();
+            braking();
+            ignitionOff();
         }
     }
     public boolean ignitionOn() {
@@ -28,17 +32,23 @@ public class Car {
         }
     }
     public boolean giveGas() {
-        gasPedal = true;
+        if (clutch) {
+            gasPedal = true;
+        }
         return true;
     }
     public void clutchRelease() {
-        clutch = false;
-        System.out.println("Сцепление отжато");
+        if (giveGas()) {
+            clutch = false;
+            System.out.println("Сцепление отжато");
+        }
     }
-    public boolean braking() {
-        gasPedal = false;
-        brakePedal = true;
-        return true;
+    public void braking() {
+        if (clutch == false) {
+            gasPedal = false;
+            brakePedal = true;
+            System.out.println("Газ отпущен, педаль тормоза зажата");
+        }
     }
     public void ignitionOff() {
         ignition = false;
