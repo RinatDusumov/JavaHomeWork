@@ -7,12 +7,8 @@
  */
 public class HomeWork {
     public static void main(String[] args) {
-        Car car = new Car(true, true, false,
-                 false, false, false, false);
-        car.clampingTheClutch();
-        System.out.println("педаль газа зажата: " + car.giveGas());
-        car.clutchRelease();
-        System.out.println("Газ отпущен, педаль тормоза зажата: " + car.braking());
-        car.ignitionOff();
+        Car car = new Car(true, false, false,
+                false, false, false, false);
+        car.machineControl();
     }
 }
