@@ -1,11 +1,6 @@
 public class Car {
-    boolean isGasoline;
-    boolean batteryIsCharged;
-    boolean gasPedal;
-    boolean brakePedal;
-    boolean toBrake;
-    boolean ignition;
-    boolean clutch;
+    boolean isGasoline, batteryIsCharged, ignition;
+    boolean gasPedal, brakePedal, toBrake, clutch;
     public Car(boolean isGasoline, boolean batteryIsCharged, boolean gasPedal,
                boolean brakePedal, boolean toBrake, boolean ignition, boolean clutch) {
         this.isGasoline = isGasoline;
