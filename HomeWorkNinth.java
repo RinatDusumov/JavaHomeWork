@@ -22,5 +22,12 @@ public class HomeWork {
             System.out.println(catTwo.jog().concat(", " + catTwo.bounce()));
         Robot robot = new Robot();
             System.out.println(robot.jog().concat(", " + robot.bounce()));
+        //task 3
+        Treadmill treadmill = new Treadmill(false, true, true);
+        Wall wall = new Wall(true,true,true);
+            System.out.println("First member: " + treadmill.firstMember() + ", second participant: " + treadmill.secondParticipant()
+                + ", third party: " + treadmill.thirdParty());
+            System.out.println("First member: " + wall.firstMember() + ", second participant: " + wall.secondParticipant()
+                + ", third party: " + wall.thirdParty());
     }
 }
