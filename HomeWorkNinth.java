@@ -3,7 +3,7 @@
  *
  * @author Rinat Dusumov
  * @todo 05.10.2022
- * @date 07.10.2022
+ * @date 08.10.2022
  */
 public class HomeWork {
     public static void main(String[] args) {
