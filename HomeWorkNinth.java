@@ -5,7 +5,7 @@
  * @todo 05.10.2022
  * @date 08.10.2022
  */
-public class HomeWork {
+public class HomeWorkNinth {
     public static void main(String[] args) {
         //task 1
         CatTwo cat = new CatTwo("Barsik", "red", 2);
