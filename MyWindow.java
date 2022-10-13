@@ -20,7 +20,7 @@ public class MyWindow extends JFrame {
         counterValueView.setHorizontalAlignment(SwingConstants.CENTER);
         add(counterValueView, BorderLayout.CENTER);
 
-        value = initialValue;
+        this.value = initialValue;
         counterValueView.setText(String.valueOf(value));
 
         JButton decrementButton = new JButton("<");
